@@ -1,0 +1,97 @@
+/* Global styles for a whimsical, welcoming appearance */
+body {
+    font-family: 'Comic Neue', cursive; /* A playful font choice enhances the friendly theme */
+    background-color: #FFE4E1; /* A soft pink background sets a warm, inviting tone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Ensures the body fills the viewport without default margins */
+}
+
+/* Chatbot container with a peachy backdrop and rounded edges for a soft look */
+#chatbot {
+    width: 90%; /* Allows for responsive width adjustment */
+    max-width: 500px; /* Caps the width for larger displays */
+    background-color: #FFDAB9; /* Peachy background color for a light, airy feel */
+    border-radius: 20px; /* Rounded corners for a gentle, friendly aesthetic */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content fits within the rounded corners */
+    display: flex;
+    flex-direction: column; /* Stacks child elements vertically */
+    padding: 20px; /* Adds some space around the inner content */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+/* Robot image container adjustments for better control and spacing */
+#robot-img {
+    width: 100%; /* Adjust to control the size of the robot image container */
+    display: flex;
+    justify-content: center; /* Centers the image container */
+    padding: 20px 0; /* Adds vertical padding but no horizontal padding */
+}
+
+/* Robot image styling for a centered and rounded presentation */
+#robot-img img {
+    max-width: 50%; /* Adjust image size, ensuring it doesn't cover important details */
+    height: auto; /* Maintains the image aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-radius: 50%; /* Circular shape for a playful, approachable look */
+}
+
+/* Chat window styling for readability and comfort */
+#chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #FFF8DC; /* Light cream background for a soft, neutral canvas */
+    padding: 15px;
+}
+
+/* Styling for message bubbles with spacing and rounded edges */
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Common message styling */
+.message {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* User message styling with alignment and color differentiation */
+.user {
+    align-self: flex-end;
+    background-color: #87CEFA;
+}
+
+/* Bot message styling for visual distinction from user messages */
+.bot {
+    align-self: flex-start;
+    background-color: #FAFAD2;
+}
+
+/* Input and button styling for cohesive, accessible interaction */
+#user-input, #send-btn {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-top: 1px solid #FFDAB9;
+}
+
+#user-input {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+#send-btn {
+    background-color: #FFB6C1;
+    color: white;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #FF69B4;
+}
